@@ -1,0 +1,215 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling the header */
+header {
+    background-color: #004d66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the navigation container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav a.active {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #006080;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0;
+    min-height: 60vh;
+}
+
+.hero h1,
+.hero p {
+    color: black; /* Ensures text is visible against the background */
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #006080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta:hover {
+    background-color: #004d66;
+}
+
+/* About section styling */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Highlights section styling */
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.highlight {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.highlight h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.highlight p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.highlight .more {
+    color: #006080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.highlight .more:hover {
+    color: #004d66;
+}
+
+/* Call-to-action section styling */
+.call-to-action {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.call-to-action h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.call-to-action .cta {
+    background-color: #006080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.call-to-action .cta:hover {
+    background-color: #003d4d;
+}
+
+/* News section styling */
+.news {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.news article {
+    margin-bottom: 20px;
+}
+
+.news h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news .more {
+    color: #006080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color
+}

@@ -1,0 +1,159 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling the header */
+header {
+    background-color: #004d66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the navigation container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #006080;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Section styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Species section styling */
+.species-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.species-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.species-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.species-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.species-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .species-item h3 {
+        font-size: 20px;
+    }
+
+    .species-item p {
+        font-size: 14px;
+    }
+}

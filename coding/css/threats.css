@@ -1,0 +1,101 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling the header */
+header {
+    background-color: #004d66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the navigation container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #006080;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Threats list styling */
+.threats-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.threat {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.threat h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.threat p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling the header */
+header {
+    background-color: #004d66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the navigation container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #006080;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Content section styling */
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content article {
+    margin-bottom: 40px;
+    text-align: left; /* Adjust text alignment as needed */
+}
+
+.content .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: aquamarine;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.content li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Team member section styling */
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

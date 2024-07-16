@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling the header */
+header {
+    background-color: #004d66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the navigation container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: #006080;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Gallery section styling */
+.gallery-section {
+    padding: 40px 20px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #004d66;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Ensure background is white for contrast */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 10px 10px 0 0; /* Only top corners are rounded */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling the captions */
+.image-caption {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    background-color: #fff; /* Match the background color of the gallery item */
+    border-radius: 0 0 10px 10px; /* Only bottom corners are rounded */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .gallery-section {
+        padding: 20px 10px;
+    }
+
+    .gallery-section h2 {
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
